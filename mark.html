@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250810234317" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="popup" class="popup popup-content-video" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">X</button>
+					<div class="popup__text">
+						<video class="intro__video-video" controls src="files/test-video.mp4" type="video/mp4">
+							Ваш браузер не підтримує відео тег.
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-seach" class="popup popup-search" aria-hidden="true">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">X</button>
+					<div class="popup__text">
+						<form action="">
+							<input class="popap__seach-input" type="text" placeholder="Пошук" />
+							<button type="submit" class="popap__search-button">
+								<img src="img/hero/seach.svg" alt="search" />
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-order" class="popup popup-order" aria-hidden="true">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<img src="img/close.svg" alt="close" class="popup__order-close" />
+					</button>
+
+					<h3 class="popup__order-title">Замовлення</h3>
+
+					<div class="popup__text">
+						<form action="">
+							<label for="name">Імʼя</label>
+							<input class="popap__order-name" type="text" id="name" />
+
+							<label for="phone">Телефон</label>
+							<input class="popap__order-tel" type="tel" data-mask="phone" id="phone" />
+
+							<label for="messege">Повідомлення</label>
+							<textarea name="messege" id="messege" cols="30" rows="10"></textarea>
+
+							<button type="submit" data-close class="popap__order-order">
+								Відправити
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-compair" class="popup compeir-popup" aria-hidden="true">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<img src="img/close.svg" alt="close" />
+					</button>
+					<div class="popup__text">
+						<div class="compeir-popup__heads">
+							<div class="compeir-popup__back popup__close" data-close>
+								<img src="img/compair/arow-right.svg" alt="back" />
+								<span>Повернутися</span>
+							</div>
+							<div class="compeir-popup__product">
+								<a href="single-product.html"><picture><source srcset="img/compair/product-01.webp" type="image/webp"><img src="img/compair/product-01.png" alt="product" class="compeir-popup__img" /></picture></a>
+								<a class="compeir-popup__name" href="single-product.html">Domekt CF 150 F C6M</a>
+
+								<button class="compeir-popup__remowe-button">
+									<img src="img/close.svg" alt="remowe" class="compeir-popup__remove-img" />
+								</button>
+							</div>
+							<div class="compeir-popup__product">
+								<a href="single-product.html"><picture><source srcset="img/compair/product-02.webp" type="image/webp"><img src="img/compair/product-02.png" alt="product" class="compeir-popup__img" /></picture></a>
+								<a class="compeir-popup__name" href="single-product.html">Domekt CF 150 F C6M
+								</a>
+
+								<button class="compeir-popup__remowe-button">
+									<img src="img/close.svg" alt="remowe" class="compeir-popup__remove-img" />
+								</button>
+							</div>
+						</div>
+
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Unit model</div>
+							<div class="compeir-popup__value">Domekt CF 150 F C6M</div>
+							<div class="compeir-popup__value">Domekt CF 200 V C6M</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Energy class</div>
+							<div class="compeir-popup__value">A+</div>
+							<div class="compeir-popup__value">A+</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Heat exchanger type</div>
+							<div class="compeir-popup__value">Counterflow</div>
+							<div class="compeir-popup__value">Counterflow</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Unit weight, kg</div>
+							<div class="compeir-popup__value">29</div>
+							<div class="compeir-popup__value">42</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Voltage, V</div>
+							<div class="compeir-popup__value">1~230</div>
+							<div class="compeir-popup__value">230</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Temperature efficiency, %</div>
+							<div class="compeir-popup__value">92</div>
+							<div class="compeir-popup__value">92</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">
+								Electric power input of the fan drive at reference flow rate,
+								W
+							</div>
+							<div class="compeir-popup__value">12</div>
+							<div class="compeir-popup__value">16</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">
+								Electric air heater capacity, kW
+							</div>
+							<div class="compeir-popup__value">0.5</div>
+							<div class="compeir-popup__value">0.5</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">
+								Electric air preheater capacity, kW
+							</div>
+							<div class="compeir-popup__value">0.75</div>
+							<div class="compeir-popup__value">1</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Maintenance space, mm</div>
+							<div class="compeir-popup__value">300</div>
+							<div class="compeir-popup__value">600</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">
+								Unit dimmensions BxHxL, mm
+							</div>
+							<div class="compeir-popup__value">560x294x1100</div>
+							<div class="compeir-popup__value">630x790x595</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Ducts diameter, mm</div>
+							<div class="compeir-popup__value">4xØ160</div>
+							<div class="compeir-popup__value">4xØ160</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Control system</div>
+							<div class="compeir-popup__value">C6M</div>
+							<div class="compeir-popup__value">C6M</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">
+								Air quality sensors connection
+							</div>
+							<div class="compeir-popup__value">
+								<img src="img/compair/plus.svg" class="compeir-popup__plus" />
+							</div>
+							<div class="compeir-popup__value">
+								<img class="compeir-popup__minus" src="img/compair/minus.svg" />
+							</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">
+								Remote control via Internet
+							</div>
+							<div class="compeir-popup__value">Integrated</div>
+							<div class="compeir-popup__value">Integrated</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Constant air volume CAV</div>
+							<div class="compeir-popup__value">
+								<img src="img/compair/plus.svg" class="compeir-popup__plus" />
+							</div>
+							<div class="compeir-popup__value">
+								<img class="compeir-popup__minus" src="img/compair/minus.svg" />
+							</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Maximum air flow, m3/h</div>
+							<div class="compeir-popup__value">153</div>
+							<div class="compeir-popup__value">199</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Maximum air flow, l/s</div>
+							<div class="compeir-popup__value">43</div>
+							<div class="compeir-popup__value">55</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Reference air flow, m3/h</div>
+							<div class="compeir-popup__value">110.6</div>
+							<div class="compeir-popup__value">139.3</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Reference air flow, m3/s</div>
+							<div class="compeir-popup__value">0.031</div>
+							<div class="compeir-popup__value">0.0387</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">SPI, W/(m3/h)</div>
+							<div class="compeir-popup__value">0.21</div>
+							<div class="compeir-popup__value">0.21</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Sound level, dB(A)</div>
+							<div class="compeir-popup__value">40</div>
+							<div class="compeir-popup__value">40</div>
+						</div>
+
+						<div class="compeir-popup__heads compeir-popup__heads_mt">
+							<button class="compeir-popup__back popup__close" data-close>
+								<img src="img/compair/arow-right.svg" alt="back" />
+								<span>Повернутися</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<button type="button" class="menu__icon icon-menu">
+					<img src="img/hero/burger.svg" alt="" />
+				</button>
+
+				<div class="header__logo">
+					<a href="index.html">
+						<img src="img/logo.svg" alt="logo" />
+					</a>
+				</div>
+
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<button class="header__close close__main-menu">
+								<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+							</button>
+							<li class="menu__item">
+								<a href="plant.html" class="menu__link"> Продукція </a>
+								<button class="header__dropdown-arrow">
+									<img src="img/hero/ar-down.svg" alt="down-arrow" />
+								</button>
+								<ul class="sub-menu">
+									<button class="return-back">
+										<img class="return-back-img" src="img/hero/return-arr.svg" alt="return" />
+										<div>Продукція</div>
+									</button>
+									<button class="header__close close__main-menu">
+										<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+									</button>
+
+									<li class="menu__item menu__item_title">
+										<a href="installation.html" class="menu__link_title">Припливно-витяжні установки</a>
+									</li>
+									<li class="menu__item">
+										<a href="domekt.html" class="menu__link">Domekt</a>
+									</li>
+									<li class="menu__item">
+										<a href="verso.html" class="menu__link menu__item_sub">Verso</a>
+										<ul class="sub-sub-menu">
+											<button class="return-back">
+												<img class="return-back-img" src="img/hero/return-arr.svg" alt="return" />
+												<div>Продукція</div>
+											</button>
+											<button class="header__close close__main-menu">
+												<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+											</button>
+											<li class="menu__item">
+												<a href="agregate.html" class="menu__link">VERSO Standard</a>
+											</li>
+											<li class="menu__item">
+												<a href="verso-pro.html" class="menu__link">VERSO Pro</a>
+											</li>
+											<li class="menu__item">
+												<a href="verso-pro-2.html" class="menu__link">Verso Pro2</a>
+												<ul class="sub-sub-sub-menu">
+													<button class="return-back">
+														<img class="return-back-img" src="img/hero/return-arr.svg" alt="return" />
+														<div>Продукція</div>
+													</button>
+													<button class="header__close close__main-menu">
+														<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+													</button>
+													<li class="menu__item">
+														<a href="" class="menu__link">Verso R Pro2</a>
+													</li>
+													<li class="menu__item">
+														<a href="" class="menu__link">VERSO CF Pro2</a>
+													</li>
+													<li class="menu__item">
+														<a href="" class="menu__link">Verso S Pro2</a>
+													</li>
+													<li class="menu__item">
+														<a href="" class="menu__link">Повітряні фільтри</a>
+													</li>
+												</ul>
+											</li>
+											<li class="menu__item">
+												<a href="single-product.html" class="menu__link">Повітряні фільтри</a>
+											</li>
+										</ul>
+									</li>
+
+									<li class="menu__item">
+										<a href="rhp.html" class="menu__link">RHP</a>
+									</li>
+									<li class="menu__item">
+										<a href="klasik.html" class="menu__link">Klasik</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a href="plant.html" class="menu__link"> Автоматика </a>
+								<button class="header__dropdown-arrow">
+									<img src="img/hero/ar-down.svg" alt="down-arrow" />
+								</button>
+								<ul class="sub-menu">
+									<button class="return-back">
+										<img class="return-back-img" src="img/hero/return-arr.svg" alt="return" />
+										<div>Автоматика</div>
+									</button>
+									<button class="header__close close__main-menu">
+										<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+									</button>
+									<li class="menu__item">
+										<a href="automatic-c6.html" class="menu__link menu__item_sub">Автоматика С6М, С8</a>
+										<ul class="sub-sub-menu">
+											<button class="return-back">
+												<img class="return-back-img" src="img/hero/return-arr.svg" alt="return" />
+												<div>Автоматика</div>
+											</button>
+											<button class="header__close close__main-menu">
+												<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+											</button>
+											<li class="menu__item">
+												<a href="automatic-c6.html" class="menu__link">Демонстрація C6M</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a href="automatic-c5.html" class="menu__link menu__item_sub">Автоматика C5</a>
+										<ul class="sub-sub-menu">
+											<button class="return-back">
+												<img class="return-back-img" src="img/hero/return-arr.svg" alt="return" />
+												<div>Автоматика</div>
+											</button>
+											<button class="header__close close__main-menu">
+												<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+											</button>
+											<li class="menu__item">
+												<a href="agregate.html" class="menu__link">Демонстрація C5</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a href="mark.html" class="menu__link">Про Komfovent</a>
+							</li>
+							<li class="menu__item">
+								<a href="document.html" class="menu__link">Документація</a>
+							</li>
+							<li class="menu__item">
+								<a href="program.html" class="menu__link">Завантажити ПЗ</a>
+							</li>
+							<li class="menu__item">
+								<a href="news.html" class="menu__link">Новини</a>
+							</li>
+							<li class="menu__item">
+								<a href="service.html" class="menu__link">Сервіс</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__search">
+					<div data-popup="#popup-seach">
+						<img src="img/hero/seach.svg" alt="search" />
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<setion class="mark page__mark">
+				<picture><source srcset="img/mark/mark__bg.webp" type="image/webp"><img src="img/mark/mark__bg.jpg" alt="bg" class="mark__bg" /></picture>
+				<h1 class="mark__text">
+					Все про торгову марку <br />
+					KOMFOVENT
+				</h1>
+			</setion>
+
+			<section class="page__grow grow">
+				<div class="grow__container">
+					<div class="grow__breadcrumps breadcrums">
+						<a href="index.html">Головна</a>
+						<p>Про Komfovent</p>
+					</div>
+
+					<div class="grow__content">
+						<div class="grow__slider swiper">
+							<div class="grow__wrapper swiper-wrapper">
+								<div class="grow__slide swiper-slide">
+									<picture><source srcset="img/grow/slide-01.webp" type="image/webp"><img class="grow__slide-img" src="img/grow/slide-01.jpg" alt="slide" /></picture>
+								</div>
+								<div class="grow__slide swiper-slide">
+									<picture><source srcset="img/grow/slide-02.webp" type="image/webp"><img class="grow__slide-img" src="img/grow/slide-02.jpg" alt="slide" /></picture>
+								</div>
+								<div class="grow__slide swiper-slide">
+									<picture><source srcset="img/grow/slide-03.webp" type="image/webp"><img class="grow__slide-img" src="img/grow/slide-03.jpg" alt="slide" /></picture>
+								</div>
+								<div class="grow__slide swiper-slide">
+									<picture><source srcset="img/grow/slide-04.webp" type="image/webp"><img class="grow__slide-img" src="img/grow/slide-04.jpg" alt="slide" /></picture>
+								</div>
+							</div>
+							<div class="swiper-pagination-grow"></div>
+						</div>
+
+						<div class="grow__description">
+							<div data-da=".grow__content, 992,0" class="grow__title title">
+								Розвиток
+							</div>
+							<div class="grow__text-description">
+								Якість продукції, інновації та професіоналізм
+								співробітників допомогли KOMFOVENT закріпитися на
+								міжнародних ринках: більше 75% виробленої продукції
+								експортується в понад 30 країн світу. Пріоритетом
+								KOMFOVENT є довгострокові та дружні стосунки – з
+								деякими компаніями співпраця триває більше 20 років,
+								напр. протягом всієї історії компанії.
+							</div>
+						</div>
+					</div>
+				</div>
+				<style>
+					.grow__content::after {
+						content: url("img/grow/gradusnik-gor.png");
+					}
+				</style>
+			</section>
+
+			<section class="blue page__blue">
+				<div class="blue__container">
+					<p class="blue__text">
+						Бренд KOMFOVENT об'єднує групу з 12 компаній, що працюють в
+						Литві та інших європейських країнах, в яких працює понад
+						700 людей, які розробляють продукти систем вентиляції,
+						виробляють і представляють їх на ринку. Зокрема, це великий
+						асортимент ефективних вентиляційних установок. KOMFOVENT
+						також виготовляє інші компоненти для систем вентиляції –
+						від повітроводів до заслінок VAV (Variable Air Volume).
+					</p>
+					<p class="blue__text">
+						Продукція KOMFOVENT не тільки гарантує комфорт людей,
+						надаючи приміщення свіжим повітрям, але й допомагає
+						забезпечити безпеку при пожежі – надійні протипожежні та
+						протидимні заслінки, димоходи та інші аксесуари, які
+						випускає компанія.
+					</p>
+					<p class="blue__text">
+						Інвестиції в новітні технології дозволяють пропонувати
+						ринку широкий асортимент продукції – обладнання для великих
+						промислових підприємств і виробничих цехів, офісів, кафе,
+						готелів, а також для індивідуальних квартир і будинків
+						клієнтів.
+					</p>
+				</div>
+			</section>
+
+			<section class="page__factory factory">
+				<div class="factory__container">
+					<div class="factory__content">
+						<div class="factory__title">Надійне виробництво</div>
+						<div class="factory__text">
+							Заводи компанії щороку виробляють більше 20 000 одиниць
+							вентиляційних установок. Асортимент обладнання компанії
+							складається з 4 груп – DOMEKT, VERSO, RHP, KLASIK.
+							Всього понад шістдесят стандартизованих моделей. Поряд з
+							ними існує дуже широкий вибір унікальних моделей, які
+							підбираються та конструюються відповідно до
+							індивідуальних потреб.
+						</div>
+					</div>
+
+					<div data-da=".factory__content, 992,1" class="factory__image">
+						<picture><source srcset="img/factory/factory.webp" type="image/webp"><img class="factory__img" src="img/factory/factory.jpg" alt="factory" /></picture>
+					</div>
+				</div>
+				<style>
+					@media (min-width: 992px) {
+						.factory__container::before {
+							content: url("img/factory/gor-gradusnik.svg");
+							top: -56px;
+							left: -20px;
+							position: absolute;
+						}
+					}
+				</style>
+			</section>
+
+			<section class="benefits page__benefits">
+				<div class="benefits__container">
+					<div class="benefits__benefit benefit">
+						<div class="benefit__image">
+							<picture><source srcset="img/benefits/benefit-1.webp" type="image/webp"><img class="benefit__img" src="img/benefits/benefit-1.png" alt="benefit" /></picture>
+						</div>
+						<p class="benefit__text">
+							Komfovent має систему управління якістю, що відповідає
+							вимогам міжнародного стандарту ISO 9001, який
+							застосовується до проектування, виробництва та продажу
+							вентиляційного обладнання та систем розподілу.
+						</p>
+					</div>
+					<div class="benefits__benefit benefit">
+						<div class="benefit__image">
+							<picture><source srcset="img/benefits/benefit-2.webp" type="image/webp"><img class="benefit__img" src="img/benefits/benefit-2.png" alt="benefit" /></picture>
+						</div>
+						<p class="benefit__text">
+							Сертифікат EUROVENT, присвоєний вентиляційним установкам
+							KOMFOVENT VERSO, свідчить про те, що компанія проектує і
+							виробляє якісне обладнання, яке відповідає міжнародним
+							стандартам. Клієнти можуть точно підібрати пристрій,
+							скориставшись нашим спеціальним програмним забезпеченням
+							для підбору ВУ.
+						</p>
+					</div>
+					<div class="benefits__benefit benefit">
+						<div class="benefit__image">
+							<picture><source srcset="img/benefits/benefit-3.webp" type="image/webp"><img class="benefit__img" src="img/benefits/benefit-3.png" alt="benefit" /></picture>
+						</div>
+						<p class="benefit__text">
+							У 2013 році були впроваджені системи управління якістю
+							LEAN і 5S, спрямовані на створення більшої цінності для
+							клієнта за рахунок використання менших ресурсів і
+							збільшення наших конкурентних переваг на ринку.
+						</p>
+					</div>
+					<div class="benefits__benefit benefit">
+						<div class="benefit__image">
+							<picture><source srcset="img/benefits/benefit-4.webp" type="image/webp"><img class="benefit__img" src="img/benefits/benefit-4.png" alt="benefit" /></picture>
+						</div>
+						<p class="benefit__text">
+							Komfovent - член Німецької асоціації виробників
+							герметичного обладнання (Herstellerverband RLT-Geräte).
+							Ця важлива оцінка допомагає зробити свій внесок у
+							розробку перспективного, безпечного для здоров'я та
+							енергоефективного вентиляційного обладнання.
+						</p>
+					</div>
+					<div class="benefits__benefit benefit">
+						<div class="benefit__image">
+							<picture><source srcset="img/benefits/benefit-5.webp" type="image/webp"><img class="benefit__img" src="img/benefits/benefit-5.png" alt="benefit" /></picture>
+						</div>
+						<p class="benefit__text">
+							Komfovent впровадила систему екологічного менеджменту,
+							яка відповідає вимогам міжнародного стандарту ISO 14001,
+							що поширюється на проектування, виробництво і продаж
+							вентиляційного обладнання та систем розподілу.
+						</p>
+					</div>
+					<div class="benefits__benefit benefit">
+						<div class="benefit__image">
+							<picture><source srcset="img/benefits/benefit-6.webp" type="image/webp"><img class="benefit__img" src="img/benefits/benefit-6.png" alt="benefit" /></picture>
+						</div>
+						<p class="benefit__text">
+							Сертифікат підтверджує, що пристрої KOMFOVENT мають
+							низьке енергоспоживання (економлять енергію).
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__white">
+					<div class="footer__sections">
+						<div class="footer__title footer__title_sections">
+							Припливно-витяжні установки
+						</div>
+						<div class="footer__name-table">
+							<div class="footer__name-row">
+								<a href="" class="footer__name footer__name_darker-color">Domekt</a>
+								<a href="" class="footer__name">R</a>
+								<a href="" class="footer__name">CF</a>
+								<a href="" class="footer__name">S</a>
+							</div>
+							<div class="footer__name-row">
+								<a href="" class="footer__name footer__name_darker-color">Verso</a>
+								<a href="" class="footer__name">Standart</a>
+								<a href="" class="footer__name">Pro</a>
+								<a href="" class="footer__name">Pro 2</a>
+							</div>
+							<div class="footer__name-row">
+								<a href="" class="footer__name footer__name_darker-color">RHP</a>
+								<a href="" class="footer__name">Standart</a>
+								<a href="" class="footer__name">Pro</a>
+								<a href="" class="footer__name">Pro 2</a>
+							</div>
+							<div class="footer__name-row">
+								<a href="" class="footer__name footer__name_darker-color">Klasik</a>
+								<a href="" class="footer__name">CF</a>
+								<a href="" class="footer__name">R</a>
+								<a href="" class="footer__name">S</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__contacts">
+						<div class="footer__title">Наші контакти</div>
+						<div class="footer__contact">
+							<img class="footer__img-h" src="img/footer/adress.svg" alt="adrees" />
+							<img class="footer__img-h-g" src="img/footer/adress-g.svg" alt="adrees" />
+							<a href="https://maps.app.goo.gl/7RsEXTusZ4tHiX787" class="footer__contact-text">Київ, бул. Вацлава Гавела 4, офіс 306</a>
+						</div>
+						<div class="footer__contact">
+							<img class="footer__img-h" src="img/footer/phone.svg" alt="phone" />
+							<img class="footer__img-h-g" src="img/footer/phone-g.svg" alt="phone" />
+							<a href="tel:+380442002707" class="footer__contact-text">(+38) 044-200-27-07</a>
+						</div>
+						<div class="footer__contact">
+							<img class="footer__img-h" src="img/footer/mail.svg" alt="mail" />
+							<img class="footer__img-h-g" src="img/footer/mail-g.svg" alt="mail" />
+							<a href="mailto:sales@vecon.ua" class="footer__contact-text">sales@vecon.ua</a>
+						</div>
+					</div>
+
+					<div class="footer__about">
+						<div class="footer__title">Про НАС</div>
+						<div class="footer__about-text">
+							ТОРГОВИЙ ДІМ ВЕКОН веде свою діяльність з 2009 року. Сьогодні ми
+							працюємо по всій території України в статусі офіційного
+							дистриб’ютора кліматичного обладнання торговельної марки
+							Komfovent.
+						</div>
+						<a href="cooperation.html" class="footer__about-link">Співпраця з дистриб'ютором</a>
+					</div>
+
+					<div class="footer__logo">
+						<a href="index.html"><img src="img/footer/logo.svg" alt="logo" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__black">
+				<div class="footer__container">
+					<div class="footer__copyright">
+						<img src="img/footer/copiright.svg" alt="copiright" />
+						<p class="footer__copyright-text">
+							Всі права захищені. Часткове або повне копіювання інформації
+							сайту можливо тільки з дозволу правовласника.
+						</p>
+					</div>
+					<div class="footer__social">
+						<a href="https://lk.linkedin.com/company/vecon-ua"><img src="img/footer/linked-in.svg" alt="social" /></a>
+						<a href="https://www.facebook.com/vecon.ua/"><img src="img/footer/facebook.svg" alt="social" /></a>
+						<a href="https://www.youtube.com/@vecon_ua"><img src="img/footer/insta.svg" alt="social" /></a>
+						<a href="https://www.instagram.com/vecon.ua/"><img src="img/footer/you-tube.svg" alt="social" /></a>
+					</div>
+				</div>
+			</div>
+
+			<style>
+				.footer__name-table::before {
+					content: url("img/footer/gradusnik-footer.svg");
+				}
+			</style>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20250810234317"></script>
+</body>
+
+</html>

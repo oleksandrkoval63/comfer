@@ -1,0 +1,1163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Vecon</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250810234317" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<div id="popup" class="popup popup-content-video" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">X</button>
+					<div class="popup__text">
+						<video class="intro__video-video" controls src="files/test-video.mp4" type="video/mp4">
+							Ваш браузер не підтримує відео тег.
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-seach" class="popup popup-search" aria-hidden="true">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">X</button>
+					<div class="popup__text">
+						<form action="">
+							<input class="popap__seach-input" type="text" placeholder="Пошук" />
+							<button type="submit" class="popap__search-button">
+								<img src="img/hero/seach.svg" alt="search" />
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-order" class="popup popup-order" aria-hidden="true">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<img src="img/close.svg" alt="close" class="popup__order-close" />
+					</button>
+
+					<h3 class="popup__order-title">Замовлення</h3>
+
+					<div class="popup__text">
+						<form action="">
+							<label for="name">Імʼя</label>
+							<input class="popap__order-name" type="text" id="name" />
+
+							<label for="phone">Телефон</label>
+							<input class="popap__order-tel" type="tel" data-mask="phone" id="phone" />
+
+							<label for="messege">Повідомлення</label>
+							<textarea name="messege" id="messege" cols="30" rows="10"></textarea>
+
+							<button type="submit" data-close class="popap__order-order">
+								Відправити
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-compair" class="popup compeir-popup" aria-hidden="true">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close">
+						<img src="img/close.svg" alt="close" />
+					</button>
+					<div class="popup__text">
+						<div class="compeir-popup__heads">
+							<div class="compeir-popup__back popup__close" data-close>
+								<img src="img/compair/arow-right.svg" alt="back" />
+								<span>Повернутися</span>
+							</div>
+							<div class="compeir-popup__product">
+								<a href="single-product.html"><picture><source srcset="img/compair/product-01.webp" type="image/webp"><img src="img/compair/product-01.png" alt="product" class="compeir-popup__img" /></picture></a>
+								<a class="compeir-popup__name" href="single-product.html">Domekt CF 150 F C6M</a>
+
+								<button class="compeir-popup__remowe-button">
+									<img src="img/close.svg" alt="remowe" class="compeir-popup__remove-img" />
+								</button>
+							</div>
+							<div class="compeir-popup__product">
+								<a href="single-product.html"><picture><source srcset="img/compair/product-02.webp" type="image/webp"><img src="img/compair/product-02.png" alt="product" class="compeir-popup__img" /></picture></a>
+								<a class="compeir-popup__name" href="single-product.html">Domekt CF 150 F C6M
+								</a>
+
+								<button class="compeir-popup__remowe-button">
+									<img src="img/close.svg" alt="remowe" class="compeir-popup__remove-img" />
+								</button>
+							</div>
+						</div>
+
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Unit model</div>
+							<div class="compeir-popup__value">Domekt CF 150 F C6M</div>
+							<div class="compeir-popup__value">Domekt CF 200 V C6M</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Energy class</div>
+							<div class="compeir-popup__value">A+</div>
+							<div class="compeir-popup__value">A+</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Heat exchanger type</div>
+							<div class="compeir-popup__value">Counterflow</div>
+							<div class="compeir-popup__value">Counterflow</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Unit weight, kg</div>
+							<div class="compeir-popup__value">29</div>
+							<div class="compeir-popup__value">42</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Voltage, V</div>
+							<div class="compeir-popup__value">1~230</div>
+							<div class="compeir-popup__value">230</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Temperature efficiency, %</div>
+							<div class="compeir-popup__value">92</div>
+							<div class="compeir-popup__value">92</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">
+								Electric power input of the fan drive at reference flow rate,
+								W
+							</div>
+							<div class="compeir-popup__value">12</div>
+							<div class="compeir-popup__value">16</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">
+								Electric air heater capacity, kW
+							</div>
+							<div class="compeir-popup__value">0.5</div>
+							<div class="compeir-popup__value">0.5</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">
+								Electric air preheater capacity, kW
+							</div>
+							<div class="compeir-popup__value">0.75</div>
+							<div class="compeir-popup__value">1</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Maintenance space, mm</div>
+							<div class="compeir-popup__value">300</div>
+							<div class="compeir-popup__value">600</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">
+								Unit dimmensions BxHxL, mm
+							</div>
+							<div class="compeir-popup__value">560x294x1100</div>
+							<div class="compeir-popup__value">630x790x595</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Ducts diameter, mm</div>
+							<div class="compeir-popup__value">4xØ160</div>
+							<div class="compeir-popup__value">4xØ160</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Control system</div>
+							<div class="compeir-popup__value">C6M</div>
+							<div class="compeir-popup__value">C6M</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">
+								Air quality sensors connection
+							</div>
+							<div class="compeir-popup__value">
+								<img src="img/compair/plus.svg" class="compeir-popup__plus" />
+							</div>
+							<div class="compeir-popup__value">
+								<img class="compeir-popup__minus" src="img/compair/minus.svg" />
+							</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">
+								Remote control via Internet
+							</div>
+							<div class="compeir-popup__value">Integrated</div>
+							<div class="compeir-popup__value">Integrated</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Constant air volume CAV</div>
+							<div class="compeir-popup__value">
+								<img src="img/compair/plus.svg" class="compeir-popup__plus" />
+							</div>
+							<div class="compeir-popup__value">
+								<img class="compeir-popup__minus" src="img/compair/minus.svg" />
+							</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Maximum air flow, m3/h</div>
+							<div class="compeir-popup__value">153</div>
+							<div class="compeir-popup__value">199</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Maximum air flow, l/s</div>
+							<div class="compeir-popup__value">43</div>
+							<div class="compeir-popup__value">55</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Reference air flow, m3/h</div>
+							<div class="compeir-popup__value">110.6</div>
+							<div class="compeir-popup__value">139.3</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Reference air flow, m3/s</div>
+							<div class="compeir-popup__value">0.031</div>
+							<div class="compeir-popup__value">0.0387</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">SPI, W/(m3/h)</div>
+							<div class="compeir-popup__value">0.21</div>
+							<div class="compeir-popup__value">0.21</div>
+						</div>
+						<div class="compeir-popup__row">
+							<div class="compeir-popup__param">Sound level, dB(A)</div>
+							<div class="compeir-popup__value">40</div>
+							<div class="compeir-popup__value">40</div>
+						</div>
+
+						<div class="compeir-popup__heads compeir-popup__heads_mt">
+							<button class="compeir-popup__back popup__close" data-close>
+								<img src="img/compair/arow-right.svg" alt="back" />
+								<span>Повернутися</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<button type="button" class="menu__icon icon-menu">
+					<img src="img/hero/burger.svg" alt="" />
+				</button>
+
+				<div class="header__logo">
+					<a href="index.html">
+						<img src="img/logo.svg" alt="logo" />
+					</a>
+				</div>
+
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<button class="header__close close__main-menu">
+								<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+							</button>
+							<li class="menu__item">
+								<a href="plant.html" class="menu__link"> Продукція </a>
+								<button class="header__dropdown-arrow">
+									<img src="img/hero/ar-down.svg" alt="down-arrow" />
+								</button>
+								<ul class="sub-menu">
+									<button class="return-back">
+										<img class="return-back-img" src="img/hero/return-arr.svg" alt="return" />
+										<div>Продукція</div>
+									</button>
+									<button class="header__close close__main-menu">
+										<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+									</button>
+
+									<li class="menu__item menu__item_title">
+										<a href="installation.html" class="menu__link_title">Припливно-витяжні установки</a>
+									</li>
+									<li class="menu__item">
+										<a href="domekt.html" class="menu__link">Domekt</a>
+									</li>
+									<li class="menu__item">
+										<a href="verso.html" class="menu__link menu__item_sub">Verso</a>
+										<ul class="sub-sub-menu">
+											<button class="return-back">
+												<img class="return-back-img" src="img/hero/return-arr.svg" alt="return" />
+												<div>Продукція</div>
+											</button>
+											<button class="header__close close__main-menu">
+												<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+											</button>
+											<li class="menu__item">
+												<a href="agregate.html" class="menu__link">VERSO Standard</a>
+											</li>
+											<li class="menu__item">
+												<a href="verso-pro.html" class="menu__link">VERSO Pro</a>
+											</li>
+											<li class="menu__item">
+												<a href="verso-pro-2.html" class="menu__link">Verso Pro2</a>
+												<ul class="sub-sub-sub-menu">
+													<button class="return-back">
+														<img class="return-back-img" src="img/hero/return-arr.svg" alt="return" />
+														<div>Продукція</div>
+													</button>
+													<button class="header__close close__main-menu">
+														<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+													</button>
+													<li class="menu__item">
+														<a href="" class="menu__link">Verso R Pro2</a>
+													</li>
+													<li class="menu__item">
+														<a href="" class="menu__link">VERSO CF Pro2</a>
+													</li>
+													<li class="menu__item">
+														<a href="" class="menu__link">Verso S Pro2</a>
+													</li>
+													<li class="menu__item">
+														<a href="" class="menu__link">Повітряні фільтри</a>
+													</li>
+												</ul>
+											</li>
+											<li class="menu__item">
+												<a href="single-product.html" class="menu__link">Повітряні фільтри</a>
+											</li>
+										</ul>
+									</li>
+
+									<li class="menu__item">
+										<a href="rhp.html" class="menu__link">RHP</a>
+									</li>
+									<li class="menu__item">
+										<a href="klasik.html" class="menu__link">Klasik</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a href="plant.html" class="menu__link"> Автоматика </a>
+								<button class="header__dropdown-arrow">
+									<img src="img/hero/ar-down.svg" alt="down-arrow" />
+								</button>
+								<ul class="sub-menu">
+									<button class="return-back">
+										<img class="return-back-img" src="img/hero/return-arr.svg" alt="return" />
+										<div>Автоматика</div>
+									</button>
+									<button class="header__close close__main-menu">
+										<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+									</button>
+									<li class="menu__item">
+										<a href="automatic-c6.html" class="menu__link menu__item_sub">Автоматика С6М, С8</a>
+										<ul class="sub-sub-menu">
+											<button class="return-back">
+												<img class="return-back-img" src="img/hero/return-arr.svg" alt="return" />
+												<div>Автоматика</div>
+											</button>
+											<button class="header__close close__main-menu">
+												<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+											</button>
+											<li class="menu__item">
+												<a href="automatic-c6.html" class="menu__link">Демонстрація C6M</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a href="automatic-c5.html" class="menu__link menu__item_sub">Автоматика C5</a>
+										<ul class="sub-sub-menu">
+											<button class="return-back">
+												<img class="return-back-img" src="img/hero/return-arr.svg" alt="return" />
+												<div>Автоматика</div>
+											</button>
+											<button class="header__close close__main-menu">
+												<img class="header__close-img close__main-menu-img" src="img/hero/close-icon-menu.svg" alt="close" />
+											</button>
+											<li class="menu__item">
+												<a href="agregate.html" class="menu__link">Демонстрація C5</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a href="mark.html" class="menu__link">Про Komfovent</a>
+							</li>
+							<li class="menu__item">
+								<a href="document.html" class="menu__link">Документація</a>
+							</li>
+							<li class="menu__item">
+								<a href="program.html" class="menu__link">Завантажити ПЗ</a>
+							</li>
+							<li class="menu__item">
+								<a href="news.html" class="menu__link">Новини</a>
+							</li>
+							<li class="menu__item">
+								<a href="service.html" class="menu__link">Сервіс</a>
+							</li>
+							<li class="menu__item">
+								<a href="contacts.html" class="menu__link">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="header__search">
+					<div data-popup="#popup-seach">
+						<img src="img/hero/seach.svg" alt="search" />
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<setion class="mark page__mark mark-add">
+				<picture><source srcset="img/automatic/automatic-c6/automatic-c6__bg.webp" type="image/webp"><img src="img/automatic/automatic-c6/automatic-c6__bg.jpg" alt="bg" class="mark__bg" /></picture>
+				<h1 class="mark__text">
+					Автоматика С6М, С8 – Ваш домашній мікроклімат у ваших руках
+				</h1>
+				<div class="mark__block-info">
+					<p>з мобільним додатком KOMFOVENT CONTROL</p>
+					<ul class="mark__block-wrapper">
+						<li class="mark__block-item">
+							<a href="#">
+								<img src="img/automatic/automatic-c6/mark/apple.svg" alt="apple">
+							</a>
+						</li>
+						<li class="mark__block-item">
+							<a href="#">
+								<img src="img/automatic/automatic-c6/mark/google-play.svg" alt="google-play">
+							</a>
+						</li>
+						<li class="mark__block-item">
+							<a href="#">
+								<img src="img/automatic/automatic-c6/mark/huawei.svg" alt="huawei">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</setion>
+			<section class="parts page__parts parts__add">
+				<div class="parts__container parts__container_domekt">
+					<div class="service__breadcrumps breadcrums">
+						<a href="index.html">Головна</a>
+						<p>Автоматика С6М, С8</p>
+					</div>
+					<div class="parts__item">
+						<div class="parts__desc">
+							<h4 class="parts__title">
+								Розумні системи керування C6M, C8 для установок DOMEKT
+							</h4>
+							<div class="systems__columns">
+								<div class="systems__column">
+									<h6>Як для початківців, так і для досвідчених
+										користувачів
+									</h6>
+									<p>Зручний інтерфейс забезпечує інтуїтивно зрозумілу
+										навігацію та керування пристроєм. Основна філософія
+										дизайну C6M, C8 – вентиляційна установка працюватиме належним чином без постійних налаштувань з боку
+										користувача. Різні режими вентиляції оптимізовані для
+										щоденних потреб користувача. Автоматичний контроль якості повітря підбирає найбільш відповідний
+										режим і забезпечує комфортні умови в приміщенні.
+										Досвідчені користувачі можуть керувати роботою
+										пристрою відповідно до своїх потреб, оскільки також
+										передбачено багато налаштувань та можливостей керування:</p>
+									<ul>
+										<li>Контроль потоку повітря: CAV / VAV / DCV *</li>
+										<li>Контроль інтенсивності за якістю повітря, CO2, рівнем вологості.</li>
+									</ul>
+								</div>
+								<div class="systems__column">
+									<h6>Лічильники споживання енергії *
+									</h6>
+									<ul>
+										<li>Індикатор енергоспоживання в реальному часі</li>
+										<li>Можливість спостереження за експлуатаційними витратами вентиляційної установки.</li>
+										<li>Лічильник рекуперації тепла.</li>
+									</ul>
+									<span>* За винятком системи керування C8.</span>
+								</div>
+								<div class="systems__column">
+									<h6>Режими роботи
+									</h6>
+									<ul>
+										<li>8 попередньо встановлених режимів</li>
+										<li>Інтелектуальні алгоритми енергозбереження.</li>
+										<li>Автоматичний контроль якості повітря за допомогою додаткового датчика якості повітря.</li>
+										<li>Розширений тижневий графік.</li>
+									</ul>
+								</div>
+								<div class="systems__column">
+									<h6>Мобільний додаток «Komfovent Control»
+									</h6>
+									<p>Новий хмарний додаток призначений для керування
+										вентиляційними установками житлових будинків з системою керування C6M, C8. Зручний інтерфейс забезпечує інтуїтивно зрозуміле керування.
+										Оскільки програма повністю повторює функції пульта
+										керування, ви матимете доступ до всіх можливостей
+										моніторингу та керування, доступних на панелі керування
+									</p>
+									<p>Мобільний додаток доступний в Google Play, App Store і
+										Huawei AppGallery.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="parts__image">
+							<picture><source srcset="img/automatic/automatic-c6/side-hero.webp" type="image/webp"><img src="img/automatic/automatic-c6/side-hero.jpg" alt="part" class="parts__img" /></picture>
+							<div class="parts__char-wrapper">
+								<div class="parts__char-block">
+									<div class="parts__char-item">
+										<img src="img/automatic/automatic-c6/icon/icon-1.svg" alt="icon">
+										<p>МІНІМАЛЬНИЙ</p>
+									</div>
+								</div>
+								<div class="parts__char-block">
+									<div class="parts__char-item">
+										<img src="img/automatic/automatic-c6/icon/icon-2.svg" alt="icon">
+										<p>НОРМАЛЬНИЙ</p>
+									</div>
+								</div>
+								<div class="parts__char-block">
+									<div class="parts__char-item">
+										<img src="img/automatic/automatic-c6/icon/icon-3.svg" alt="icon">
+										<p>ІНТЕНСИВНИЙ</p>
+									</div>
+								</div>
+								<div class="parts__char-block">
+									<div class="parts__char-item">
+										<img src="img/automatic/automatic-c6/icon/icon-4.svg" alt="icon">
+										<p>МАКСИМАЛЬНИЙ</p>
+									</div>
+								</div>
+								<div class="parts__char-block">
+									<div class="parts__char-item">
+										<img src="img/automatic/automatic-c6/icon/icon-5.svg" alt="icon">
+										<p>КУХНЯ</p>
+									</div>
+								</div>
+								<div class="parts__char-block">
+									<div class="parts__char-item">
+										<img src="img/automatic/automatic-c6/icon/icon-6.svg" alt="icon">
+										<p>КАМІН</p>
+									</div>
+								</div>
+								<div class="parts__char-block">
+									<div class="parts__char-item">
+										<img src="img/automatic/automatic-c6/icon/icon-7.svg" alt="icon">
+										<p>ПРІОРИТЕТ</p>
+									</div>
+								</div>
+								<div class="parts__char-block">
+									<div class="parts__char-item">
+										<img src="img/automatic/automatic-c6/icon/icon-8.svg" alt="icon">
+										<p>ВІДПУСТКА</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<style>
+					@media (min-width: 992px) {
+						.parts__container::after {
+							content: url("img/domekt/gr-r.svg");
+							right: -64px;
+							bottom: -64px;
+							position: absolute;
+						}
+					}
+				</style>
+				<h2 class="parts__title parts__title_last">Протестуй OnLine як працює вентиляційна установка</h2>
+			</section>
+			<section class="page__catalog catalog catalog__add" id="demo">
+				<div class="catalog__container">
+					<picture><source srcset="img/automatic/automatic-c6/macbook.webp" type="image/webp"><img class="catalog__img" src="img/automatic/automatic-c6/macbook.png" alt="catalog"></picture>
+					<div class="catalog__content">
+						<h3 class="catalog__title">Демонстрація інноваційної автоматики C6M</h3>
+						<p class="catalog__desc">Інтегрована інтелектуальна система керування С6М для побутових вентиляційних установок серії DOMEKT</p>
+						<div class="catalog__info">
+							<a href="#" class="catalog__info-link">
+								<img src="img/automatic/automatic-c6/icon/link.svg" alt="link">
+							</a>
+							<div class="catalog__info-example">
+								<div class="catalog__info-block">
+									<h6>user</h6>
+									<p>Логін</p>
+								</div>
+								<div class="catalog__info-block">
+									<h6>user</h6>
+									<p>Пароль</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="management">
+				<div class="management__container">
+					<div class="management__wrap">
+						<h2 class="parts__title">Варіанти керування</h2>
+						<div class="management__wrapper">
+							<div class="management__block">
+								<picture><source srcset="img/automatic/automatic-c6/management/picture-1.webp" type="image/webp"><img src="img/automatic/automatic-c6/management/picture-1.jpg" alt="picture"></picture>
+								<p><span>01</span> Додаток «Komfovent Control»</p>
+							</div>
+							<div class="management__block">
+								<picture><source srcset="img/automatic/automatic-c6/management/picture-2.webp" type="image/webp"><img src="img/automatic/automatic-c6/management/picture-2.jpg" alt="picture"></picture>
+								<p><span>02</span> Пульт керування</p>
+							</div>
+							<div class="management__block">
+								<picture><source srcset="img/automatic/automatic-c6/management/picture-3.webp" type="image/webp"><img src="img/automatic/automatic-c6/management/picture-3.jpg" alt="picture"></picture>
+								<p><span>03</span> Web Сервер</p>
+							</div>
+							<div class="management__block">
+								<picture><source srcset="img/automatic/automatic-c6/management/picture-4.webp" type="image/webp"><img src="img/automatic/automatic-c6/management/picture-4.jpg" alt="picture"></picture>
+								<p><span>04</span> Підключення та протоколи</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__factory factory factory__add">
+				<div class="factory__container">
+					<div class="factory__content">
+						<div class="factory__title">Додаток «Komfovent Control»</div>
+						<div class="factory__text">
+							Новий хмарний додаток призначений для керування вентиляційними установками житлових будинків з автоматикою C6M та C8. Зручний інтерфейс забезпечує інтуїтивно зрозуміле керування. Оскільки програма повністю повторює функції пульта керування, ви матимете доступ до всіх можливостей моніторингу та керування, доступних на пульті керування.
+						</div>
+						<div class="factory__info">
+							<div class="factory__info-img">
+								<img src="img/automatic/automatic-c6/icon/factory-link.svg" alt="factory-link">
+							</div>
+							<div class="factory__info-desc">
+								<p>Додаток Вы можете знайти в таких магазинах додатків:</p>
+							</div>
+						</div>
+						<ul class="mark__block-wrapper">
+							<li class="mark__block-item">
+								<a href="https://apps.apple.com/lt/app/komfovent-control-cloud-based/id1490226567">
+									<img src="img/automatic/automatic-c6/mark/apple.svg" alt="apple">
+								</a>
+							</li>
+							<li class="mark__block-item">
+								<a href="https://play.google.com/store/apps/details?id=com.finaly.komfoventcloud&hl=en">
+									<img src="img/automatic/automatic-c6/mark/google-play.svg" alt="google-play">
+								</a>
+							</li>
+							<li class="mark__block-item">
+								<a href="#">
+									<img src="img/automatic/automatic-c6/mark/huawei.svg" alt="huawei">
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="factory__image">
+						<picture><source srcset="img/automatic/automatic-c6/phone.webp" type="image/webp"><img class="factory__img" src="img/automatic/automatic-c6/phone.jpg" alt="phone"></picture>
+					</div>
+				</div>
+				<style>
+					.factory__content::before {
+						content: url("img/automatic/automatic-c6/icon/gradusnik.svg");
+						top: 50%;
+						left: -8%;
+						position: absolute;
+						transform: rotate(0deg) translate(-50%, -50%);
+					}
+
+					@media (max-width: 1250px) {
+						.factory__content::before {
+							top: -55%;
+							left: -20px;
+							transform: rotate(90deg) translate(-50%, -50%);
+						}
+					}
+
+					@media (max-width: 992px) {
+						.factory__content::before {
+							top: -60%;
+						}
+					}
+
+					@media (max-width: 767.98px) {
+						.factory__content::before {
+							transform: rotate(90deg) scale(0.5) translate(-50%, -50%);
+							left: -15px;
+							top: -55%;
+						}
+					}
+
+					@media (max-width: 479.98px) {
+						.factory__content::before {
+							display: none;
+						}
+
+						.factory__container::before {
+							content: url("img/automatic/automatic-c6/icon/gradusnik.svg");
+							position: absolute;
+							transform: rotate(90deg) scale(0.3) translate(-50%, 50%);
+							top: -235px;
+							left: 150px;
+						}
+					}
+				</style>
+			</section>
+			<section class="systems">
+				<div class="systems__container">
+					<h2 class="parts__title">Можливості автоматики C6M завдяки режиму постійного повітряного потоку (CAV)
+					</h2>
+					<div class="systems__wrapper-wrap">
+						<p class="parts__text">Установка подає та відводить постійний об`єм повітря, встановлений користувачем, незалежно від змін у системі вентиляції. Контроль продуктивності установки відбувається в реальному часі, за рахунок вбудованих вимірювальних пристроїв автоматики.</p>
+						<p class="parts__text">Точність підтримки об'єму повітря - 1м3/год</p>
+					</div>
+				</div>
+			</section>
+			<section class="management termostat">
+				<div class="management__container">
+					<div class="management__wrap">
+						<h2 class="parts__title">Керуйте вентиляцією, опаленням та кондиціюванням
+						</h2>
+						<h2 class="parts__title">Функція термостата
+						</h2>
+						<p class="termostat__desc">
+							Панель керування C6.1 також можна використовувати як кімнатний термостат для ввімкнення/
+							вимкнення зовнішніх пристроїв опалення або охолодження відповідно до температури в приміщенні,
+							де встановлена панель керування. Наприклад: опалювальний котел, тепла підлога або тепловий насос.
+
+						</p>
+						<p class="termostat__desc">
+							Отже, вам не потрібно буде встановлювати окремий термостат, який активує ці пристрої в
+							приміщенні.
+						</p>
+						<div class="management__wrapper">
+							<div class="management__block">
+								<picture><source srcset="img/automatic/automatic-c6/management/picture-5.webp" type="image/webp"><img src="img/automatic/automatic-c6/management/picture-5.jpg" alt="picture"></picture>
+							</div>
+							<div class="management__block">
+								<picture><source srcset="img/automatic/automatic-c6/management/picture-6.webp" type="image/webp"><img src="img/automatic/automatic-c6/management/picture-6.jpg" alt="picture"></picture>
+							</div>
+							<div class="management__block">
+								<picture><source srcset="img/automatic/automatic-c6/management/picture-7.webp" type="image/webp"><img src="img/automatic/automatic-c6/management/picture-7.jpg" alt="picture"></picture>
+							</div>
+							<div class="management__block">
+								<picture><source srcset="img/automatic/automatic-c6/management/picture-8.webp" type="image/webp"><img src="img/automatic/automatic-c6/management/picture-8.jpg" alt="picture"></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="table-section">
+				<div class="table-section__container">
+					<h2 class="parts__title">Порівняти можливості в керуванні ветиляційною установкою завдяки панелі керування C6M або C8</h2>
+					<div class="grid-table">
+						<!-- Заголовки колонок -->
+						<div class="grid-header">ФУНКЦІЇ РОЗУМНОГО КЕРУВАННЯ</div>
+						<div class="grid-header">С6М</div>
+						<div class="grid-header">С8</div>
+
+						<!-- Рядки даних -->
+						<div class="grid-item grid-item__text">
+							<h6>Контроль температури повітря</h6>
+							<p>Установка може контролювати температуру повітря відповідно до заданих користувачем параметрів температури припливу або витяжки. За бажанням користувача кімнатну температуру також можна підтримувати за допомогою датчика температури, розташованого на панелі керування</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Температурний баланс</h6>
+							<p>Значення температури припливного повітря автоматично встановлюється на основі поточної температури
+								витяжного повітря, тобто температура витяжного повітря та температура припливного повітря будуть
+								однаковими.</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Контроль інтенсивності</h6>
+							<p>Швидкість вентиляторів можна плавно регулювати в діапазоні 20-100%, таким чином інтенсивність вентиляції
+								може бути легко встановлена користувачем</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Режим постійного повітряного потоку (CAV)</h6>
+							<p>Установка подає та відводить постійний об’єм повітря, встановлений користувачем, незалежно від змін у
+								системі вентиляції</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Режим контролю змінного повітряного потоку (VAV)</h6>
+							<p>Витрата повітря, що подається і видаляється змінюється в залежності від потреби повітря в різних приміщеннях</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Режим прямого керування кількістю повітря (DCV)</h6>
+							<p>Витрата повітря установки керується безпосередньо зовнішніми сигналами</p>
+						</div>
+						<div class="grid-item"></div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Керування зовнішнім водяним теплообмінником</h6>
+							<p>Передбачена функція керування додатковим водяним канальним нагрівачем або охолоджувачем, яку
+								користувач може активувати за допомогою пульта керування</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Керування зовнішнім блоком DX</h6>
+							<p>Передбачена функція керування додатковим канальним фреоновим нагрівачем або охолоджувачем, яку
+								користувач може активувати за допомогою пульта керування</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Керування комбінованим теплообмінником</h6>
+							<p>Нагрівання або охолодження водою з використанням всього одного насоса та одного триходового клапана.
+								Режими опалення та охолодження можна перемикати автоматично залежно від температури води (вик.
+								термостата) або за допомогою зовнішнього перемикача</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Тижневий графік роботи</h6>
+							<p>Можна вибрати один із чотирьох попередньо встановлених тижневих графіків. За потреби графік можна
+								модифікувати. Також можна встановити графік відпустки, коли установка не працюватиме більшу частину часу,
+								і лише іноді провітрюватиме приміщення</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Контроль якості повітря (2 датчики)</h6>
+							<p>При підключенні додатково замовлених зовнішніх датчиків якості повітря або вологості інтенсивність
+								вентиляції вибирається автоматично. Можливо використовувати одночасно два датчики якості повітря,
+								таким чином комфорт можна контролювати відповідно до двох різних параметрів або в двох окремих
+								приміщеннях, якщо це необхідно</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Контроль якості повітря (1 датчик)</h6>
+							<p>При підключенні додатково замовлених зовнішніх датчиків якості повітря або вологості інтенсивність
+								вентиляції вибирається автоматично. Таким чином, оптимальний комфорт у кімнаті забезпечується із
+								мінімальними витратами енергії</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Повернення прохолоди</h6>
+							<p>Протягом літнього сезону в кондиціонованих приміщеннях прохолода від витяжного повітря повертається
+								назад у приміщення</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Функція збереження температури</h6>
+							<p>Автоматична функція намагається підтримувати комфортні температурні умови в приміщеннях шляхом
+								зниження інтенсивності вентиляції, тобто запобігає надмірному охолодженню або перегріву приміщення.</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Охолодження зовнішнім повітрям</h6>
+							<p>Коли температура повітря в приміщенні перевищує задане значення, а температура зовнішнього повітря
+								нижча, ніж температура в приміщенні, рекуперація тепла та інші процеси нагрівання/охолодження блокуються,
+								а охолодження відбувається лише зовнішнім повітрям</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Роторний теплоутилізатор із регульованою швидкістю обертання</h6>
+							<p>Регулюючи швидкість обертання рекуператора, можна підтримувати більш точну задану температуру, також
+								зменшується шум і продовжується термін служби двигуна рекуператора</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Керування вентиляцією за допомогою 3-х зовнішніх контактів</h6>
+							<p>Потік повітря можна контролювати за допомогою трьох зовнішніх контактів, кожен із яких може бути
+								призначений на різну інтенсивність вентиляції</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Керування вентиляцією за допомогою 1-го зовнішнього контакту</h6>
+							<p>Повітряним потоком можна керувати за допомогою зовнішнього контакту, який можна призначити для зміни
+								інтенсивності вентиляції за необхідності, наприклад, разом із роботою кухонної витяжки</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Керування через інтернет-браузер або додаток для смартфона</h6>
+							<p>Коли пристрій підключено до комп’ютерної мережі або Інтернету, зручний веб-інтерфейс дозволяє керувати
+								обладнанням за допомогою комп’ютера або іншого мобільного пристрою</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Осушення повітря</h6>
+							<p>Якщо відносна вологість повітря в приміщенні перевищує встановлену межу, то інтенсивність роботи припливно-витяжної установки збільшується до тих пір, поки вологість не знизиться до потрібного рівня. Для
+								підвищення ефективності роботи установку рекомендується оснастити холодильною установкою і додатковим канальним датчиком вологості</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Лічильники енергії</h6>
+							<p>Індикатор споживання енергії в реальному часі. Можливість спостереження за експлуатаційними витратами
+								вентиляційної установки. Лічильник рекуперації тепла. Для аналізу роботи вентиляційної установки доступні
+								лічильники дня, місяця або загального часу</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Лічильники часу роботи</h6>
+							<p>Контролюється час роботи вентилятора, рекуператора та нагрівача. Для аналізу роботи вентиляційної установки доступні лічильники дня, місяця або загального часу</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Тимчасові режими вентиляції</h6>
+							<p>Можна запустити три режими вентиляції тривалістю в кілька хвилин, не змінюючи запрограмованих графіків.
+								Користувач може просто встановити таймер від 1 до 300 хвилин, щоб запустити бажаний режим, ігноруючи
+								основний тижневий розклад</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Операція на вимогу</h6>
+							<p>Вентиляційна установка спрацьовує, коли якість повітря в приміщенні перевищує встановлені рівні. Потрібен
+								додатковий датчик якості повітря або з цією ж метою можна використати датчик вологості, вбудований у
+								панель керування</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Функція термостата</h6>
+							<p>Пульт керування C6.1 можна використовувати як кімнатний термостат для вмикання/вимикання зовнішніх
+								пристроїв опалення або охолодження (таких як бойлер, тепловий насос або кондиціонер) залежно від
+								температури приміщення, де встановлено пульт керування.</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+					</div>
+					<div class="grid-table">
+						<!-- Заголовки колонок -->
+						<div class="grid-header">ФУНКЦІЇ БЕЗПЕКИ</div>
+						<div class="grid-header">С6М</div>
+						<div class="grid-header">С8</div>
+
+						<!-- Рядки даних -->
+						<div class="grid-item grid-item__text">
+							<h6>Індикація забруднення фільтра</h6>
+							<p>Ступінь забруднення повітряних фільтрів розраховується, враховуючи тривалість та інтенсивність роботи
+								установки. Користувач отримує повідомлення про те, що час замінити повітряні фільтри</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Захист рекуператора від замерзання</h6>
+							<p>Установки з протиточним пластинчастим рекуператором мають попередній електричний нагрівач, який
+								регулюється за потреби та працює лише на потужність, що забезпечує захист від замерзання. Таким чином,
+								вентиляційна установка може працювати за низьких зовнішніх температур</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Захист рекуператора від замерзання</h6>
+							<p>Спеціальний алгоритм захисту від замерзання, що поєднує перепускну заслонку та регулювання швидкості
+								вентилятора, запобігає замерзанню протиточного рекуператора навіть при негативних зовнішніх
+								температурах (до -10 °C). Для додаткового захисту також доступне керування попереднім нагрівачем, що може
+								бути встановлений в каналі</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Індикація несправності рекуператора</h6>
+							<p>В установках з пластинчастим або роторним рекуператором система керування контролює тепловий ККД, і
+								якщо він не досягає зазначеного рівня, вказується несправність</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Захист водонагрівача від замерзання</h6>
+							<p>Для канального водонагрівача забезпечується максимальний захист від замерзання води під час роботи
+								установки. Навіть коли пристрій вимкнено, циркуляція теплої води підтримується як додаткова допомога в
+								холодну пору року</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Захист від перегріву електронагрівача</h6>
+							<p>Електричний нагрівач автоматично вимикається у разі перегріву, щоб запобігти пошкодженню компонентів
+								нагрівача та електроніки. Крім того, коли пристрій зупиняється під час роботи нагрівача, вентилятори
+								продовжуватимуть працювати протягом встановленого періоду часу, щоб охолодити нагрівач</p>
+						</div>
+						<div class="grid-item"></div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Індикація низького потоку повітря</h6>
+							<p>Якщо вентиляційна установка не досягає встановленого об’єму повітря протягом зазначеного часу, робота
+								установки припиняється</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Аварійне відключення при пожежі</h6>
+							<p>Зовнішня пожежна сигналізація здійснюється при підключенні установки до системи пожежної сигналізації
+								будівлі. Також є внутрішня пожежна сигналізація для виявлення підвищеної температури всередині припливної
+								установки або системи вентиляції</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Контроль протипожежної заслонки</h6>
+							<p>Можливість моніторингу та проведення періодичних випробувань системи протипожежної заслонки безпосередньо з панелі керування. Зовнішній контролер протипожежних заслонок постійно перевіряє працездатність протипожежних заслонок і передає зворотний зв'язок системі вентиляції</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+
+						<div class="grid-item grid-item__text">
+							<h6>Тижневий графік роботи</h6>
+							<p>Можна вибрати один із чотирьох попередньо встановлених тижневих графіків. За потреби графік можна
+								модифікувати. Також можна встановити графік відпустки, коли установка не працюватиме більшу частину часу,
+								і лише іноді провітрюватиме приміщення</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Аварійне відключення, коли температура досягає критичних меж</h6>
+							<p>Коли температура припливного повітря падає нижче або перевищує допустиме значення, установка
+								зупиняється</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item grid-item__text">
+							<h6>Інтелектуальна самодіагностика</h6>
+							<p>Функція самоперевірки контролера та елементів вентиляційної установки. У разі виявлення несправності
+								контролер припиняє роботу установки та попереджає про несправність відповідними інформаційними
+								повідомленнями</p>
+						</div>
+						<div class="grid-item checkmark">✔</div>
+						<div class="grid-item checkmark">✔</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__white">
+						<div class="footer__sections">
+							<div class="footer__title footer__title_sections">
+								Припливно-витяжні установки
+							</div>
+							<div class="footer__name-table">
+								<div class="footer__name-row">
+									<a href="" class="footer__name footer__name_darker-color">Domekt</a>
+									<a href="" class="footer__name">R</a>
+									<a href="" class="footer__name">CF</a>
+									<a href="" class="footer__name">S</a>
+								</div>
+								<div class="footer__name-row">
+									<a href="" class="footer__name footer__name_darker-color">Verso</a>
+									<a href="" class="footer__name">Standart</a>
+									<a href="" class="footer__name">Pro</a>
+									<a href="" class="footer__name">Pro 2</a>
+								</div>
+								<div class="footer__name-row">
+									<a href="" class="footer__name footer__name_darker-color">RHP</a>
+									<a href="" class="footer__name">Standart</a>
+									<a href="" class="footer__name">Pro</a>
+									<a href="" class="footer__name">Pro 2</a>
+								</div>
+								<div class="footer__name-row">
+									<a href="" class="footer__name footer__name_darker-color">Klasik</a>
+									<a href="" class="footer__name">CF</a>
+									<a href="" class="footer__name">R</a>
+									<a href="" class="footer__name">S</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__contacts">
+							<div class="footer__title">Наші контакти</div>
+							<div class="footer__contact">
+								<img class="footer__img-h" src="img/footer/adress.svg" alt="adrees" />
+								<img class="footer__img-h-g" src="img/footer/adress-g.svg" alt="adrees" />
+								<a href="https://maps.app.goo.gl/7RsEXTusZ4tHiX787" class="footer__contact-text">Київ, бул. Вацлава Гавела 4, офіс 306</a>
+							</div>
+							<div class="footer__contact">
+								<img class="footer__img-h" src="img/footer/phone.svg" alt="phone" />
+								<img class="footer__img-h-g" src="img/footer/phone-g.svg" alt="phone" />
+								<a href="tel:+380442002707" class="footer__contact-text">(+38) 044-200-27-07</a>
+							</div>
+							<div class="footer__contact">
+								<img class="footer__img-h" src="img/footer/mail.svg" alt="mail" />
+								<img class="footer__img-h-g" src="img/footer/mail-g.svg" alt="mail" />
+								<a href="mailto:sales@vecon.ua" class="footer__contact-text">sales@vecon.ua</a>
+							</div>
+						</div>
+
+						<div class="footer__about">
+							<div class="footer__title">Про НАС</div>
+							<div class="footer__about-text">
+								ТОРГОВИЙ ДІМ ВЕКОН веде свою діяльність з 2009 року. Сьогодні ми
+								працюємо по всій території України в статусі офіційного
+								дистриб’ютора кліматичного обладнання торговельної марки
+								Komfovent.
+							</div>
+							<a href="cooperation.html" class="footer__about-link">Співпраця з дистриб'ютором</a>
+						</div>
+
+						<div class="footer__logo">
+							<a href="index.html"><img src="img/footer/logo.svg" alt="logo" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__black">
+					<div class="footer__container">
+						<div class="footer__copyright">
+							<img src="img/footer/copiright.svg" alt="copiright" />
+							<p class="footer__copyright-text">
+								Всі права захищені. Часткове або повне копіювання інформації
+								сайту можливо тільки з дозволу правовласника.
+							</p>
+						</div>
+						<div class="footer__social">
+							<a href="https://lk.linkedin.com/company/vecon-ua"><img src="img/footer/linked-in.svg" alt="social" /></a>
+							<a href="https://www.facebook.com/vecon.ua/"><img src="img/footer/facebook.svg" alt="social" /></a>
+							<a href="https://www.youtube.com/@vecon_ua"><img src="img/footer/insta.svg" alt="social" /></a>
+							<a href="https://www.instagram.com/vecon.ua/"><img src="img/footer/you-tube.svg" alt="social" /></a>
+						</div>
+					</div>
+				</div>
+
+				<style>
+					.footer__name-table::before {
+						content: url("img/footer/gradusnik-footer.svg");
+					}
+				</style>
+			</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20250810234317"></script>
+</body>
+
+</html>
